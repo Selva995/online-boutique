@@ -1,0 +1,19 @@
+
+body{
+    font-family: 'Roboto';
+    background: linear-gradient(90deg,rgb(88, 3, 60) 50%);
+   /* background-image: url("../assets/l6.jpg");*/
+}
+.inner-row{
+    height: 100vh;
+}
+.primaryBg{
+    background-color:rgba(141,194,111,1) ;
+}
+.primaryColor{
+    color: rgba(141,194,111,1);
+}
+.form-box{
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,2),0 5px 5px 0 rgba(0,0,0,24);
+}

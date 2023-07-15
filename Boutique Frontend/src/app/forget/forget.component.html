@@ -1,0 +1,41 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget Password</title>
+  </head>-->
+  
+  <body style="background-image:url(assets/l7.jpg); background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+    <form #insert="ngForm" (ngSubmit)="insertdetail1(insert);btnclick()">
+      <h1>Reset Your Password</h1>
+      <div>
+        <label>UserName :</label>
+        <input type="email" class="text" name="email" #email="ngModel" id="email" required pattern="[a-z0-9._%+-@[a-z0-9.-]+[a-z]{2,4}$" ngModel>
+        <div *ngIf="email.invalid && email.touched"><small class="text-danger">please enter email</small></div>
+      </div>
+      <div>
+        <label>Keyword:</label> <input type="text" #keyword="ngModel" required minimumlength="4" class="text" name="keyword" ngModel>
+        <div *ngIf="keyword.invalid && keyword.touched"><small class="text-danger">please enter keyword</small></div>
+       
+      </div>
+        <div>
+        <label>Enter New Password :</label> <input type="text" #password="ngModel" required minimumlength="4" class="text" name="password" ngModel>
+        <div *ngIf="password.invalid && password.touched"><small class="text-danger">please enter password</small></div>
+       
+      </div>
+
+      <div>
+        <label>Re Enter New Paasword :</label>
+        <input type="password"  #password="ngModel" required minimumlength="4" class="text" name="password" ngModel >
+        <div *ngIf="password.invalid && password.touched"><small class="text-danger">please enter password</small></div>
+      </div>
+      
+      <button  class="btn primaryBg " type="submit"><span>Submit</span></button>
+    </form>
+  </body>
+
+

@@ -1,0 +1,43 @@
+<body style="background-image:url(assets/l5.jpg); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center align-items-center inner-row">
+            <div class="col-md-5">
+                <div class="form-box registeration-form p-5">
+                    <div class="form-title">
+                        <h2 class="fw-bold mb-3">signup page</h2>
+    
+                    </div>
+                    <form #insert="ngForm" (ngSubmit)="insertdetail(insert);btnclick()">
+                        <div class="form-floating mb-3">
+                            <input type="text" #userName="ngModel" required minimumlength="10" class="form-control form-control-sm" name="userName" id="floatingInput" ngModel>
+                            <div *ngIf="userName.touched && userName.invalid" class="text-danger">Name is not valid</div>
+                            <label for="floatingInput">UserName</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" #email="ngModel" required pattern="[a-z0-9._%+-@[a-z0-9.-]+[a-z]{2,4}$" class="form-control form-control-sm" name="email" id="floatingInput" ngModel>
+                            <div *ngIf="email.invalid && email.touched"><small class="text-danger">please enter email</small></div>
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" #password="ngModel" required minimumlength="4" class="form-control form-control-sm" name="password" id="floatingPassword" ngModel>
+                            <div *ngIf="password.invalid && password.touched"><small class="text-danger">please enter password</small></div>
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="mt-3">
+                            <button  class="btn primaryBg text-white" type="submit"><span>sign up</span></button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <span>Already have an account?</span><a aria-current="page" routerLink="/admin" routerActive="active" href="">login</a>
+                    </div>
+                </div>
+                
+            </div>  
+        </div>   
+            </div>
+            
+    </body>

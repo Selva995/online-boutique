@@ -1,0 +1,30 @@
+
+<div class="main" style="background-image:url(assets/l6.jpg); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+  <br>
+  <br>
+  <form class="top" action="" #loginform="ngForm" (ngSubmit)="adminLogin()">
+     <h2  style="color: rgba(12, 6, 6, 0.877);">LOGIN </h2>
+      <div class="back" >
+          <a aria-current="page" href="/home">Please enter your e-mail and password</a>
+      </div>
+      <main>
+          <div class=" contents">
+           <div class="uname">
+              <label> Email </label>
+              <input type="email" name="email" id="email" [(ngModel)]="admin.email">
+  
+          </div>
+          <div class="password">
+              <label> Password</label>
+              <input type="password" name="password" id="password" [(ngModel)]="admin.password">
+          </div>
+          <div >
+            <button [disabled]="loginform.form.invalid" type="submit"class="btn"><span>login</span></button>
+            <a class="btn" routerLink="/verify" routerActive="active" href="#!">ForgetPassword?</a>
+      </div>
+      <small class="text-danger">{{msg}}</small>
+      </div>
+      </main>
+      </form>

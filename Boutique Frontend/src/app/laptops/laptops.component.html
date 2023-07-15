@@ -1,0 +1,78 @@
+<div class="sidenav">
+  <img class="img" src="/assets/logo.png" height="75px" width="40%">
+  <h4 style="color: rgb(7, 1, 5);text-align: center;">Saree Boutique</h4>
+  <br>
+ <li><a routerLink="/home2" href="">Home</a></li>
+ <li><a routerLink="/laptops" href="">Add Sarees</a></li>
+ <li><a routerLink="/laptop-d" href="">Saree Details</a></li>
+ <li><a routerLink="/find-id" href="">Payments</a></li>
+</div>
+<div class="card">
+  <div class="main" style="background-image:url(assets/l7.jpg); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+<div class="form-group mt-4">
+  <a  routerLink="/home" href="" class="get-started-btn scrollto" style="margin-left: 85%;">Logout</a>
+</div>
+
+  <form #insert1="ngForm" (ngSubmit)="addDetail(insert1)">
+      <div class="mt-5 box">
+          <div class="form-row">
+              <div class="col-md-14">
+               <h2 class="form-group mt-4" style="color: rgb(25, 4, 102);font:  sans-serif;"> Add Sarees</h2>
+              <div class="form-group mt-4">
+                  <label>Product Id</label>
+              </div>
+              <div class="form-row" >
+                  <div class="col">
+                      <input type="text"  class="form-control" name="id" ngModel>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-14">
+              <div class="form-group mt-4">
+                  <label>Product Description</label>
+              </div>
+              <div class="form-row">
+                  <div class="col">
+                      <input type="text" class="form-control" name="description" ngModel>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-14">
+              <div class="form-group mt-4">
+                  <label>Product Price</label>
+              </div>
+              <div class="form-row" >
+                  <div class="col">
+                      <input type="text" class="form-control" name="price" ngModel>
+                  </div>
+              </div>
+          </div>
+              <div class="col-md-14">
+                  <div class="form-group mt-4">
+                      <label>Product Name</label>
+                  </div>
+              <div class="form-row">
+                  <div class="col">
+                      <input type="text" class="form-control" name="title" ngModel>
+                  </div>
+              </div>
+          </div>
+          <div class="form-row mt-4">
+              <div class="col-6">
+                   <button type="submit" class="btn btn-primary" ><span>AddProduct</span></button>
+              </div>
+                <!-- <div class="col-6">
+                  <button type="submit" class="btn btn-primary"><span>Reset</span></button>&nbsp;
+              </div>--> 
+              
+          
+          </div>
+          </div>
+      </div>
+
+  </form>
+</div>
+</div>
+

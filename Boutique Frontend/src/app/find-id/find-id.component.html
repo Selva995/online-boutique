@@ -1,0 +1,48 @@
+<div class="sidenav">
+   <img class="img" src="/assets/logo.png" height="75px" width="40%">
+   <h4 style="color: rgb(17, 240, 221);text-align: center;">Admin Dashboard</h4>
+   <br>
+  <li><a routerLink="/home2" href="">Home</a></li>
+  <li><a routerLink="/laptops" href="">Add Sarees</a></li>
+  <li><a routerLink="/laptop-d" href="">Sarees Details</a></li>
+  <li><a routerLink="/find-id" href="">Payments</a></li>
+ </div>
+ <div class="card">
+   <div class="main" style="background-image:url(assets/l7.jpg); background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;">
+ <div class="form-group mt-4">
+   <a  routerLink="/home" href="" class="get-started-btn scrollto" style="margin-left: 85%;">Logout</a>
+ </div>
+ 
+ <div class="col-md-8 mt-4 mb-4 box">
+    <table class="table table-bordered">
+       <thead>
+           <tr>
+               <th>product id</th>
+           <th>Email</th>
+           <th>Name</th>
+           <th>Address</th>
+           <th>Phone No</th>
+           <th>State</th>
+           <th>ZipCode</th>
+           <th>Payment</th>
+           
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let item of listData">
+            <td><span>{{item.id}}</span></td>
+               <td><span>{{item.email}}</span></td>
+               <td><span>{{item.name}}</span></td>
+               <td><span>{{item.address}}</span></td>
+               <td><span>{{item.phoneNo}}</span></td>
+               <td><span>{{item.state}}</span></td>
+               <td><span>{{item.zipCode}}</span></td>
+               <td><span>₹{{item.grandTotal}}</span></td>
+           </tr>
+       </tbody>
+    </table>
+   </div>
+ </div>
+ </div>

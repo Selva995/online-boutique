@@ -1,0 +1,26 @@
+<body style="background-image:url(assets/l8.jpg); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+  <br>
+  <br>
+  <form class="top" action="" #loginform="ngForm" (ngSubmit)="adminLogin()">
+     <h2  style="color: rgba(12, 6, 6, 0.877);">Verify Page</h2>
+      <main>
+          <div class=" contents">
+           <div class="uname">
+              <label> User Name</label>
+              <input type="email" name="email" id="email" [(ngModel)]="admin.email">
+  
+          </div>
+          <div class="keyword">
+              <label> KeyWord</label>
+              <input type="keyword" name="keyword" id="keyword" [(ngModel)]="admin.keyword">
+          </div>
+          <div >
+            <button [disabled]="loginform.form.invalid"  type="submit"class="btn"><span>verify</span></button>
+      </div>
+      <small class="text-danger">{{msg}}</small>
+      </div>
+      </main>
+      </form>
+  </body>

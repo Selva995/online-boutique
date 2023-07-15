@@ -1,0 +1,31 @@
+h1{
+    color: hsl(0, 0%, 0%);
+    height: 50px;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Increase the font size of the navbar contents */
+.navbar-nav li a {
+    font-size: 18px;
+  }
+  
+  /* Decrease the font size of the navbar logo */
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  /* Increase the size of the search input */
+  .navbar input[type="search"] {
+    font-size: 16px;
+    height: 40px;
+    padding: 6px 12px;
+  }
+  
+  /* Decrease the size of the mobile navigation toggle icon */
+  .mobile-nav-toggle {
+    font-size: 20px;
+  }
+  

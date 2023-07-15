@@ -1,0 +1,38 @@
+
+<body class="form" style="background-image:url(assets/l7.jpg); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+
+<div class="container">
+    <div class="row justify-content-center align-items-center inner-row">
+        <div class="col-md-5">
+            <div class="form-box login-form p-5">
+                <div class="form-title">
+                    <h2 class="fw-bold mb-3">Login</h2>
+
+                </div>
+                <form action="" #loginform="ngForm" (ngSubmit)="userLogin()">
+                    <small class="text-danger">{{msg}}</small>
+                    <div class="form-floating mb-3">
+                        <input type="email" [(ngModel)]="user.email" required pattern="[a-z0-9._%+-@[a-z0-9.-]+[a-z]{2,4}$"#email="ngModel" class="form-control form-control-sm" name="email" id="floatingInput">
+                        <div *ngIf="email.invalid && email.touched"><small class="text-danger">Enter correct email</small></div>
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" [(ngModel)]="user.password" required minlength="4" #password="ngModel" class="form-control form-control-sm" class="form-control form-control-sm" name="password" id="floatingPassword">
+                        <div *ngIf="password.invalid && password.touched"><small class="text-danger">enter password</small></div>
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="mt-3">
+                            <button [disabled]="loginform.form.invalid" type="submit" class="btn primaryBg text-white"><span>login</span></button>
+                    </div>
+                </form>
+                <div class="mt-3">
+                    <span>Don't have an account?</span><a aria-current="page" routerLink="/signup" routerActive="active" href="">Sign Up</a>
+                </div>
+            </div>
+            
+        </div>  
+    </div>   
+        </div>
+</body>

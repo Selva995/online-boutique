@@ -1,0 +1,32 @@
+
+
+.box{
+    
+
+    width: 80%;
+    border: 1px solid rgb(154, 138, 138);
+    border-radius: 25px;
+    margin-left: 150px;
+    padding: 0px 20px 20px 20px;
+    
+    background-color:rgb(235, 243, 239);
+    align-self: center;
+}
+
+.main{
+    background-color: brown;
+    width:90%;
+    height: 100vh;
+    
+}
+
+
+.table-border{
+    color: rgb(8, 7, 7);
+}
+table{
+   border:none;
+   overflow-wrap: break-word;
+  
+    
+}

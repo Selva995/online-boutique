@@ -1,0 +1,16 @@
+
+.box{
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgb(154, 138, 138);
+    border-radius: 25px;
+    padding: 0px 50px 50px 50px;
+    margin-left: 300px;
+    background-color:rgb(229, 235, 232);
+}
+.main{
+    background-color: brown;
+    width:90%;
+    height: 100vh;
+    
+}

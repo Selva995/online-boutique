@@ -1,0 +1,20 @@
+.back-btn  {
+    text-decoration: none;
+    padding:10px;
+    border-radius: 25px;
+    background-color: rgba(223, 219, 223, 0.808);
+    font-weight: 600;
+    color: black;
+    align-self: center;
+    margin-left: 45%;
+    
+}
+.back{
+    width:15rem;
+    height:3rem;
+    
+}
+.back-btn, .back :hover
+{
+    background-color: darkseagreen;
+}
